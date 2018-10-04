@@ -9,10 +9,22 @@
 /* Begin PBXBuildFile section */
 		93BFED427ED930F3CDA9485D /* Pods_instagramMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490F5AC2ED92BCFEFA2EE957 /* Pods_instagramMVVM.framework */; };
 		E18A0613216256C200F68A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A0612216256C200F68A88 /* AppDelegate.swift */; };
-		E18A0615216256C200F68A88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A0614216256C200F68A88 /* ViewController.swift */; };
 		E18A0618216256C200F68A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18A0616216256C200F68A88 /* Main.storyboard */; };
 		E18A061A216256C200F68A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18A0619216256C200F68A88 /* Assets.xcassets */; };
 		E18A061D216256C200F68A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18A061B216256C200F68A88 /* LaunchScreen.storyboard */; };
+		E1DD4A772162598600FA516B /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4A752162598600FA516B /* AppConstant.swift */; };
+		E1DD4A782162598600FA516B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4A762162598600FA516B /* Utils.swift */; };
+		E1DD4A81216259BB00FA516B /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4A7B216259BB00FA516B /* BaseResponse.swift */; };
+		E1DD4A83216259BB00FA516B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4A7D216259BB00FA516B /* APIClient.swift */; };
+		E1DD4A84216259BB00FA516B /* PhotosRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4A7F216259BB00FA516B /* PhotosRequest.swift */; };
+		E1DD4A85216259BB00FA516B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4A80216259BB00FA516B /* Request.swift */; };
+		E1DD4ABB21626C4300FA516B /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4ABA21626C4300FA516B /* ImagesViewController.swift */; };
+		E1DD4ABE21626E6800FA516B /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4ABC21626E6800FA516B /* ImagesCollectionViewCell.swift */; };
+		E1DD4ABF21626E6800FA516B /* ImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DD4ABD21626E6800FA516B /* ImagesCollectionViewCell.xib */; };
+		E1DD4AC1216355A100FA516B /* ImageResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AC0216355A100FA516B /* ImageResponseModel.swift */; };
+		E1DD4AC32163652300FA516B /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AC22163652300FA516B /* ImageResponse.swift */; };
+		E1DD4AC52163673500FA516B /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AC42163673500FA516B /* ImageViewModel.swift */; };
+		E1DD4AC72165171E00FA516B /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AC62165171E00FA516B /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +32,23 @@
 		B1330FB0E7365144D5F6D8F5 /* Pods-instagramMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagramMVVM/Pods-instagramMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		E18A060F216256C100F68A88 /* instagramMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagramMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18A0612216256C200F68A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E18A0614216256C200F68A88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E18A0617216256C200F68A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E18A0619216256C200F68A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E18A061C216256C200F68A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E18A061E216256C200F68A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1DD4A752162598600FA516B /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		E1DD4A762162598600FA516B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E1DD4A7B216259BB00FA516B /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		E1DD4A7D216259BB00FA516B /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E1DD4A7F216259BB00FA516B /* PhotosRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosRequest.swift; sourceTree = "<group>"; };
+		E1DD4A80216259BB00FA516B /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E1DD4ABA21626C4300FA516B /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		E1DD4ABC21626E6800FA516B /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1DD4ABD21626E6800FA516B /* ImagesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesCollectionViewCell.xib; sourceTree = "<group>"; };
+		E1DD4AC0216355A100FA516B /* ImageResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponseModel.swift; sourceTree = "<group>"; };
+		E1DD4AC22163652300FA516B /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
+		E1DD4AC42163673500FA516B /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		E1DD4AC62165171E00FA516B /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		F691EB30C425408436BCFC4B /* Pods-instagramMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagramMVVM/Pods-instagramMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +93,90 @@
 		E18A0611216256C100F68A88 /* instagramMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				E1DD4A742162598600FA516B /* Core */,
+				E1DD4A79216259BB00FA516B /* Service */,
+				E1DD4A95216259FC00FA516B /* view */,
+				E1DD4A86216259C700FA516B /* ViewController */,
+				E1DD4A8B216259E400FA516B /* ViewModel */,
+				E1DD4A8E216259F000FA516B /* Model */,
 				E18A0612216256C200F68A88 /* AppDelegate.swift */,
-				E18A0614216256C200F68A88 /* ViewController.swift */,
 				E18A0616216256C200F68A88 /* Main.storyboard */,
 				E18A0619216256C200F68A88 /* Assets.xcassets */,
 				E18A061B216256C200F68A88 /* LaunchScreen.storyboard */,
 				E18A061E216256C200F68A88 /* Info.plist */,
 			);
 			path = instagramMVVM;
+			sourceTree = "<group>";
+		};
+		E1DD4A742162598600FA516B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD4A752162598600FA516B /* AppConstant.swift */,
+				E1DD4A762162598600FA516B /* Utils.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E1DD4A79216259BB00FA516B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD4A7A216259BB00FA516B /* Response */,
+				E1DD4A7D216259BB00FA516B /* APIClient.swift */,
+				E1DD4A7E216259BB00FA516B /* Request */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E1DD4A7A216259BB00FA516B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD4A7B216259BB00FA516B /* BaseResponse.swift */,
+				E1DD4AC22163652300FA516B /* ImageResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E1DD4A7E216259BB00FA516B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD4A7F216259BB00FA516B /* PhotosRequest.swift */,
+				E1DD4A80216259BB00FA516B /* Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		E1DD4A86216259C700FA516B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD4ABA21626C4300FA516B /* ImagesViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E1DD4A8B216259E400FA516B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD4AC42163673500FA516B /* ImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1DD4A8E216259F000FA516B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD4AC0216355A100FA516B /* ImageResponseModel.swift */,
+				E1DD4AC62165171E00FA516B /* ImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1DD4A95216259FC00FA516B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD4ABC21626E6800FA516B /* ImagesCollectionViewCell.swift */,
+				E1DD4ABD21626E6800FA516B /* ImagesCollectionViewCell.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		E6D38246E077B20310D6AFB9 /* Pods */ = {
@@ -150,6 +250,7 @@
 			files = (
 				E18A061D216256C200F68A88 /* LaunchScreen.storyboard in Resources */,
 				E18A061A216256C200F68A88 /* Assets.xcassets in Resources */,
+				E1DD4ABF21626E6800FA516B /* ImagesCollectionViewCell.xib in Resources */,
 				E18A0618216256C200F68A88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,8 +315,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E18A0615216256C200F68A88 /* ViewController.swift in Sources */,
+				E1DD4AC1216355A100FA516B /* ImageResponseModel.swift in Sources */,
+				E1DD4ABB21626C4300FA516B /* ImagesViewController.swift in Sources */,
+				E1DD4AC52163673500FA516B /* ImageViewModel.swift in Sources */,
+				E1DD4A81216259BB00FA516B /* BaseResponse.swift in Sources */,
+				E1DD4A83216259BB00FA516B /* APIClient.swift in Sources */,
+				E1DD4A772162598600FA516B /* AppConstant.swift in Sources */,
+				E1DD4A84216259BB00FA516B /* PhotosRequest.swift in Sources */,
 				E18A0613216256C200F68A88 /* AppDelegate.swift in Sources */,
+				E1DD4AC32163652300FA516B /* ImageResponse.swift in Sources */,
+				E1DD4A85216259BB00FA516B /* Request.swift in Sources */,
+				E1DD4ABE21626E6800FA516B /* ImagesCollectionViewCell.swift in Sources */,
+				E1DD4AC72165171E00FA516B /* ImageModel.swift in Sources */,
+				E1DD4A782162598600FA516B /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

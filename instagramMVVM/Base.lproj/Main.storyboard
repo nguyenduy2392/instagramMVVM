@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wTi-lq-tgQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Images View Controller-->
+        <scene sceneID="2uH-cE-f0R">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="wTi-lq-tgQ" customClass="ImagesViewController" customModule="instagramMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GQ7-gs-D9E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Uv-jp-hpr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox2-bX-rOk">
+                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="listButtonTouchUp:" destination="wTi-lq-tgQ" eventType="touchUpInside" id="oe3-mi-coi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqC-1O-QqG">
+                                        <rect key="frame" x="131.5" y="0.0" width="112" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="columnButtonTouchUp:" destination="wTi-lq-tgQ" eventType="touchUpInside" id="DzF-5E-EvR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSD-IZ-gqX">
+                                        <rect key="frame" x="263.5" y="0.0" width="111.5" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ox2-bX-rOk" firstAttribute="width" secondItem="dSD-IZ-gqX" secondAttribute="width" id="7hi-eA-L5C"/>
+                                    <constraint firstAttribute="height" constant="50" id="JjO-9c-D4l"/>
+                                    <constraint firstItem="ox2-bX-rOk" firstAttribute="width" secondItem="kqC-1O-QqG" secondAttribute="width" id="TKs-0G-WWa"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5zF-FZ-urS">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ewv-Tz-vFT">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Uv-jp-hpr" firstAttribute="leading" secondItem="AJG-Eh-o17" secondAttribute="leading" id="JQA-IN-pfO"/>
+                            <constraint firstItem="5zF-FZ-urS" firstAttribute="top" secondItem="2Uv-jp-hpr" secondAttribute="bottom" id="L0P-dk-70e"/>
+                            <constraint firstItem="AJG-Eh-o17" firstAttribute="trailing" secondItem="2Uv-jp-hpr" secondAttribute="trailing" id="Xgb-AB-YZD"/>
+                            <constraint firstItem="5zF-FZ-urS" firstAttribute="leading" secondItem="AJG-Eh-o17" secondAttribute="leading" id="lUy-Cb-5YA"/>
+                            <constraint firstItem="AJG-Eh-o17" firstAttribute="bottom" secondItem="5zF-FZ-urS" secondAttribute="bottom" id="nJe-hp-PML"/>
+                            <constraint firstItem="AJG-Eh-o17" firstAttribute="trailing" secondItem="5zF-FZ-urS" secondAttribute="trailing" id="zAT-7Z-MFv"/>
+                            <constraint firstItem="2Uv-jp-hpr" firstAttribute="top" secondItem="AJG-Eh-o17" secondAttribute="top" id="zJ0-kw-cUk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AJG-Eh-o17"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="5Ue-55-771">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="columnButton" destination="kqC-1O-QqG" id="Awd-AJ-dDQ"/>
+                        <outlet property="imagesListCollectionView" destination="5zF-FZ-urS" id="cEd-XW-yfj"/>
+                        <outlet property="listButton" destination="ox2-bX-rOk" id="639-BK-Q8H"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUk-0f-IFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="402" y="148"/>
         </scene>
     </scenes>
 </document>
